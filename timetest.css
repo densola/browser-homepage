@@ -2,16 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #25252B;
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fsimple-simple-background-minimalism-black-background-sunset-mountains-digital-art-1382917.jpg&f=1&nofb=1');
     background-position: center;
     background-attachment: fixed;
     color: white;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
     font-family: 'Poiret One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
 }
 
 #time-container {
@@ -22,13 +29,13 @@ body {
 
 .time-section {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 #time {
-    padding-top:130px;
-    font-size: 100px;
+    font-size: 5rem;
+    text-align: center;
 }
 
 #day {
@@ -50,15 +57,11 @@ body {
 
 #link-container {
     width:100%;
+    max-width: 600px;
     padding-top:20px;
     display:flex;
-    justify-content:center;
-}
-
-#links {
-    width:70%;
-    display:flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 a:link{
@@ -91,4 +94,15 @@ a:active{
     border-radius: 25px;
     border: 1px solid white;
     padding:10px;
+}
+
+@media (max-width: 600px) {
+    #link-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    a {
+        width: fit-content;
+    }
 }
