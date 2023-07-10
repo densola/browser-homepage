@@ -70,7 +70,7 @@ setInterval(()=>{
         case 6:
             day_name = "Saturday";
     }
-    html_day.textContent=day_name+", ";
+    html_day.textContent=day_name;
 
     var hours = (date.getHours());
     var minutes = date.getMinutes();

@@ -1,94 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 
-body {
-    background-color: #25252B;
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fsimple-simple-background-minimalism-black-background-sunset-mountains-digital-art-1382917.jpg&f=1&nofb=1');
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    margin: 0px;
-    padding: 0px;
+/* GENERAL STYLES */
+* {
     box-sizing: border-box;
-    font-family: 'Poiret One', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-#time-container {
-    display: flex;
-    width: 100%;
+main {
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: #000000bf;
+    background-image: url("https://i.pinimg.com/originals/ed/a5/73/eda5739966cb33768d8ad0d77d7307ce.gif");
+    background-position: center;
+    background-size: cover;
     flex-direction: column;
+    font-family: "Poiret One", sans-serif;
+    height: 100vh;
+    padding: 1rem;
 }
 
-.time-section {
-    width: 100%;
-    display:flex;
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+/* UTILITY STYLES */
+.flex {
+    align-items: center;
+    display: flex;
     justify-content: center;
 }
 
-#time {
-    padding-top:130px;
-    font-size: 100px;
+/* SITE STYLES */
+.time-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-#day {
-    font-size: 20px;
-    padding-right: 5px;
-    font-family: 'Turret Road', sans-serif;
+.time-container * {
+    text-align: center;
 }
 
+#day,
 #date {
-    font-size: 20px;
-    font-family: 'Turret Road', sans-serif;
+    font-family: "Turret Road", sans-serif;
+    font-size: 2rem;
+}
+
+#time {
+    font-size: 4rem;
 }
 
 #greeting {
-    padding:20px 0px 10px 0px;
-    font-size: 40px;
-    font-family: 'Megrim', sans-serif;
-}
-
-#link-container {
-    width:100%;
-    padding-top:20px;
-    display:flex;
-    justify-content:center;
+    font-family: "Megrim", sans-serif;
+    font-size: 2.5rem;
+    margin: 1rem 1rem 1.25rem;
 }
 
 #links {
-    width:70%;
-    display:flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
 }
 
-a:link{
-    color:white;
-    text-decoration: none;
-    border-radius: 25px;
+#links > * {
     border: 1px solid white;
-    padding:10px;
+    border-radius: 25px;
+    padding: 0.75rem;
+    width: fit-content;
 }
 
-a:visited{
-    color:white;
-    text-decoration: none;
-    border-radius: 25px;
-    border: 1px solid white;
-    padding:10px;
-}
+/* ===TABLET+ VERSION=== */
+@media only screen and (min-width: 768px) {
+    /* SITE STYLES */
+    #day,
+    #date {
+        font-size: 2rem;
+    }
 
-a:hover{
-    color:white;
-    text-decoration: none;
-    border-radius: 25px;
-    border: 1px solid white;
-    padding:10px;
-}
+    #time {
+        font-size: 5.95rem;
+    }
 
-a:active{
-    color:white;
-    text-decoration: none;
-    border-radius: 25px;
-    border: 1px solid white;
-    padding:10px;
+    #greeting {
+        font-size: 2.5rem;
+        margin: 1.5rem 1rem 2rem;
+    }
+
+    #links {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #links > * {
+        border-radius: 40px;
+        font-size: 1.25rem;
+        padding: 1rem 1.5rem;
+    }
 }
