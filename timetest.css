@@ -15,7 +15,7 @@ main {
     background-attachment: fixed;
     background-blend-mode: overlay;
     background-color: #000000bf;
-    background-image: url("https://i.giphy.com/media/BHNfhgU63qrks/giphy.webp");
+    background-image: url("images/R.gif");
     background-position: center;
     background-size: cover;
     flex-direction: column;
