@@ -1,59 +1,59 @@
-setInterval(()=>{
+function getDate() {
     var date = new Date();
-
-    /* Date */
     const html_date = document.querySelector("#date");
-    let month = date.getMonth()+1;
+    let month = date.getMonth() + 1;
     let day = date.getDate();
     let year = date.getFullYear();
     switch (date.getMonth()) {
         case 0:
-            month="January";
+            month = "January";
             break;
         case 1:
-            month="February";
+            month = "February";
             break;
         case 2:
-            month="March";
+            month = "March";
             break;
         case 3:
-            month="April";
+            month = "April";
             break;
         case 4:
-            month="May";
+            month = "May";
             break;
         case 5:
-            month="June";
+            month = "June";
             break;
         case 6:
-            month="July";
+            month = "July";
             break;
         case 7:
-            month="August";
+            month = "August";
             break;
         case 8:
-            month="September";
+            month = "September";
             break;
         case 9:
-            month="October";
+            month = "October";
             break;
         case 10:
-            month="November";
+            month = "November";
             break;
         case 11:
-            month="December";
+            month = "December";
             break;
     }
     html_date.textContent = day + " " + month + " " + year;
+}
 
-    /* Day */
+function getDayName() {
+    var date = new Date();
     const html_day = document.querySelector("#day");
     switch (date.getDay()) {
         case 0:
-            day_name="Sunday";
+            day_name = "Sunday";
             break;
         case 1:
-            day_name="Monday";
+            day_name = "Monday";
             break;
         case 2:
             day_name = "Tuesday";
@@ -70,43 +70,55 @@ setInterval(()=>{
         case 6:
             day_name = "Saturday";
     }
-    html_day.textContent=day_name;
+    html_day.textContent = day_name;
+}
 
-    var hours = (date.getHours());
+function showTime() {
+    var date = new Date();
+    var hours = date.getHours();
     var minutes = date.getMinutes();
     var seconds = date.getSeconds();
     var meridiem = "AM";
-
-    /* Greeting */
-    const html_greeting = document.querySelector("#greeting");
-    if (hours>=1 && hours<=5) {
-        html_greeting.textContent = "Sleep well :)"
-    }
-    if (hours>=5 && hours<=12) {
-        html_greeting.textContent = "Good morning."
-    }
-    if (hours>=12 && hours<=19) {
-        html_greeting.textContent = "Good afternoon."
-    }
-    if (hours>=19 && hours<=24) {
-        html_greeting.textContent = "Good night."
-    }
-
-    /* Clock */
     const html_time = document.querySelector("#time");
-    if(hours>12){
-        hours=hours-12;
-        meridiem="PM"
+    if (hours >= 12) {
+        hours = hours - 12;
+        meridiem = "PM";
     }
     if (hours < 10) {
         hours = "0" + hours;
     }
-    if(minutes < 10){
+    if (minutes < 10) {
         minutes = "0" + minutes;
     }
-    if(seconds < 10){
+    if (seconds < 10) {
         seconds = "0" + seconds;
     }
-    html_time.textContent=hours+":"+minutes+":"+seconds+" "+meridiem;
-    
+    html_time.textContent = hours + ":" + minutes + ":" + seconds + " " + meridiem;
+}
+
+function generateGreeting() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    const html_greeting = document.querySelector("#greeting");
+    if (hours >= 1 && hours <= 5) {
+        html_greeting.textContent = "Sleep well :)";
+    }
+    if (hours >= 5 && hours <= 12) {
+        html_greeting.textContent = "Good morning.";
+    }
+    if (hours >= 12 && hours <= 19) {
+        html_greeting.textContent = "Good afternoon.";
+    }
+    if (hours >= 19 && hours <= 24) {
+        html_greeting.textContent = "Good night.";
+    }
+}
+
+setInterval(() => {
+    getDate();
+    getDayName();
+    showTime();
+    generateGreeting();
 });
