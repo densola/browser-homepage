@@ -1,3 +1,3 @@
 # timetest
 
-My homepage that I created for firefox.
+This was initially created so I could learn about JavaScript.
