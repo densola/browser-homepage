@@ -15,7 +15,7 @@ main {
     background-attachment: fixed;
     background-blend-mode: overlay;
     background-color: #0000007a;
-    background-image: url("images/wp2763910.gif");
+    background-image: url("images/8.gif");
     background-position: center;
     background-size: cover;
     flex-direction: column;
@@ -121,5 +121,8 @@ a:active {
     }
     a {
         width: fit-content;
+    }
+    main {
+        background-position: 27rem;
     }
 }
