@@ -1,0 +1,13 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="vector-effect: non-scaling-stroke;">
+ <defs style="vector-effect: non-scaling-stroke;">
+  <symbol clip-rule="evenodd" id="svg_4" style="vector-effect: non-scaling-stroke;" viewBox="0 0 32 40" x="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+   <g style="vector-effect: non-scaling-stroke;" transform="matrix(1,0,0,0.997834,0,0.00419993)">
+    <path d="m14,20.022c0,0 4,-0.018 4,-0.018c0,0 0,7.996 0,7.996c0,1.105 0.895,2 2,2c1.331,0 3.669,0 5,0c0.53,0 1.039,-0.211 1.414,-0.586c0.375,-0.375 0.586,-0.884 0.586,-1.414l0,-11c0,0 2,0 2,0c0.398,0 0.758,-0.236 0.917,-0.6c0.159,-0.365 0.086,-0.789 -0.184,-1.08c0,0 -8.135,-8.761 -11.535,-12.422c-0.567,-0.611 -1.364,-0.959 -2.198,-0.959c-0.834,0 -1.631,0.348 -2.198,0.959c-3.4,3.661 -11.535,12.422 -11.535,12.422c-0.27,0.291 -0.343,0.715 -0.184,1.08c0.159,0.364 0.519,0.6 0.917,0.6l2,0l0,11c0,0.53 0.211,1.039 0.586,1.414c0.375,0.375 0.884,0.586 1.414,0.586c1.331,0 3.669,0 5,0c0.53,0 1.039,-0.211 1.414,-0.586c0.375,-0.375 0.586,-0.884 0.586,-1.414l0,-7.978z" style="vector-effect: non-scaling-stroke;"/>
+   </g>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <use fill="#7f7f7f" id="svg_5" x="-0.41667" xlink:href="#svg_4" y="24.63669"/>
+  <g id="svg_6" style="vector-effect: non-scaling-stroke;"/>
+ </g>
+</svg>
